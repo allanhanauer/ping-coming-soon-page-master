@@ -1,0 +1,126 @@
+:root {
+  --clr-Blue: hsl(223, 87%, 63%);
+  --clr-PaleBlue: hsl(223, 100%, 88%);
+  --clr-LightRed: hsl(354, 100%, 66%);
+  --clr-Gray: hsl(0, 0%, 59%);
+  --clr-VeryDarkBlue: hsl(209, 33%, 12%);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#title {
+  color: var(--clr-Gray);
+  font-size: 3.0125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#title #title-bold {
+  color: var(--clr-VeryDarkBlue);
+  font-size: 3.0125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#logo {
+  margin-bottom: 50px;
+}
+#desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+#desc p {
+  color: var(--clr-VeryDarkBlue);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 95px;
+  gap: 5px;
+}
+.form.error {
+  margin-bottom: 80px;
+}
+.formEmail {
+  display: flex;
+  gap: 30px;
+}
+.errorEmail {
+    color: var(--clr-LightRed);
+    font-size: 0.78125rem;
+    font-style: normal;
+    font-weight: 300;
+}
+#email {
+    width: 421px;
+    height: 56px;
+    padding-left: 15px;
+    border-radius: 28px;
+    border: 1px solid var(--clr-Gray);
+}
+.errorEmailI#email{
+    border: 1px solid var(--clr-LightRed);
+}
+#submit {
+  background-color: var(--clr-Blue);
+  width: 200px;
+  font-size: 1.01875rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 28px;
+  transition: 0.5s;
+}
+#submit:hover {
+  background-color: hsla(223, 87%, 63%, 0.8);
+}
+#dashboard {
+  width: 650px;
+  height: 386px;
+  margin-bottom: 75px;
+}
+
+.boxes {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 28px;
+}
+
+.box {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--clr-Gray);
+  justify-content: center;
+  align-items: center;
+}
+.box.activate {
+  background-color: var(--clr-Blue);
+}
+.copy {
+  color: var(--clr-Gray);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+@media only screen and (max-width: 768px) {
+  body, #root {
+    width: 100vw;
+    height: 1624px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+}
